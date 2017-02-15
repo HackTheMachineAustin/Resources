@@ -1,0 +1,157 @@
+***SCAN 1***
+# nmap 192.168.0.0/24
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-05 18:19 PST
+Nmap scan report for 192.168.0.1
+Host is up (0.00060s latency).
+Not shown: 996 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 2A:30:44:26:25:96 (Unknown)
+
+Nmap scan report for 192.168.0.100
+Host is up (0.0021s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 233.70 seconds
+
+
+
+***SCAN 2***
+# nmap -sU -Pn -p- 192.168.0.100
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-05 18:37 PST
+Nmap scan report for 192.168.0.100
+Host is up (0.0021s latency).
+All 65535 scanned ports on 192.168.0.100 are closed (64506) or open|filtered (1029)
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 1 IP address (1 host up) scanned in 78122.88 seconds
+root@amarisoft-PC2:~# 
+
+
+
+***SCAN 3***
+# nmap -sS -Pn -p- 192.168.0.100
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-06 09:56 PST
+Nmap scan report for 192.168.0.100
+Host is up (0.0017s latency).
+Not shown: 65521 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+10023/tcp open  unknown
+10112/tcp open  unknown
+10113/tcp open  unknown
+10114/tcp open  unknown
+10115/tcp open  netiq-endpt
+10116/tcp open  unknown
+10128/tcp open  unknown
+10129/tcp open  unknown
+10131/tcp open  unknown
+10132/tcp open  unknown
+20010/tcp open  unknown
+20045/tcp open  unknown
+20101/tcp open  unknown
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 1 IP address (1 host up) scanned in 6487.50 seconds
+root@amarisoft-PC2:~# 
+
+
+
+***SCAN 4***
+# nmap -O 192.168.0.100
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-06 11:45 PST
+Nmap scan report for 192.168.0.100
+Host is up (0.0021s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+No exact OS matches for host (If you know what OS is running on it, see http://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=6.40%E=4%D=1/6%OT=10010%CT=1%CU=43801%PV=Y%DS=1%DC=D%G=Y%M=00409D
+OS:%TM=586FF3ED%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%CI=I%II
+OS:=I%TS=7)SEQ(SP=105%GCD=1%ISR=10D%TI=Z%CI=I%TS=7)OPS(O1=M5B4ST11NW6%O2=M5
+OS:B4ST11NW6%O3=M5B4NNT11NW6%O4=M5B4ST11NW6%O5=M5B4ST11NW6%O6=M5B4ST11)WIN(
+OS:W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)ECN(R=Y%DF=Y%TG=40%W=390
+OS:8%O=M5B4NNSNW6%CC=Y%Q=)ECN(R=Y%DF=Y%T=40%W=3908%O=M5B4NNSNW6%CC=Y%Q=)T1(
+OS:R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0
+OS:%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T4(R=Y%DF
+OS:=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%TG=4
+OS:0%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=
+OS:)T7(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z
+OS:%A=S+%F=AR%O=%RD=0%Q=)U1(R=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%
+OS:RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%TG=40%CD=S)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at http://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.32 seconds
+
+
+
+***SCAN 5***
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-06 17:35 PST
+Nmap scan report for android-400ac6289737c4b2.local.tld (192.168.0.100)
+Host is up (0.0020s latency).
+Not shown: 9985 closed ports
+PORT      STATE         SERVICE
+10009/udp open|filtered unknown
+10010/udp open|filtered unknown
+10021/udp open|filtered unknown
+10024/udp open|filtered unknown
+10026/udp open|filtered unknown
+10031/udp open|filtered unknown
+10034/udp open|filtered unknown
+10035/udp open|filtered unknown
+10036/udp open|filtered unknown
+10037/udp open|filtered unknown
+10038/udp open|filtered unknown
+10039/udp open|filtered unknown
+10042/udp open|filtered unknown
+10043/udp open|filtered unknown
+10046/udp open|filtered unknown
+13132/udp open|filtered unknown
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 1 IP address (1 host up) scanned in 10486.34 seconds
+root@amarisoft-PC2:~# 
+
+
+
+***SCAN 6***
+root@amarisoft-PC2:~# nmap -sS -Pn -p0-1000 192.168.0.100
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 10:44 PST
+Nmap scan report for android-400ac6289737c4b2.local.tld (192.168.0.100)
+Host is up (0.0086s latency).
+All 1001 scanned ports on android-400ac6289737c4b2.local.tld (192.168.0.100) are closed
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.32 seconds
+root@amarisoft-PC2:~# 
+
+
+
+***SCAN 7***
+root@amarisoft-PC2:~# nmap -sU -Pn -p0-1000 192.168.0.100
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 10:42 PST
+Nmap scan report for android-400ac6289737c4b2.local.tld (192.168.0.100)
+Host is up (0.0029s latency).
+All 1001 scanned ports on android-400ac6289737c4b2.local.tld (192.168.0.100) are closed
+MAC Address: 00:40:9D:7F:67:71 (Digiboard)
+
+Nmap done: 1 IP address (1 host up) scanned in 1044.73 seconds
+
+

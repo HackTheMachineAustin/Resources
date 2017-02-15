@@ -1,0 +1,103 @@
+***Scan 1***
+root@amarisoft-PC2:~# nmap 172.31.24.0/24
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 11:35 PST
+Nmap scan report for 172.31.24.3
+Host is up (0.0013s latency).
+Not shown: 998 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+10010/tcp open  rxapi
+MAC Address: 00:D0:1D:17:77:3A (Furuno Electric CO.)
+
+
+
+***SCAN 2***
+root@amarisoft-PC2:~# nmap 172.31.252.0/24
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 11:39 PST
+Nmap scan report for 172.31.252.1
+Host is up (0.0026s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+MAC Address: 00:40:9D:7F:67:70 (Digiboard)
+
+
+
+***SCAN 3***
+root@amarisoft-PC2:~# nmap 172.31.200.0/24
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 11:45 PST
+Nmap scan report for 172.31.200.20
+Host is up (0.00026s latency).
+Not shown: 993 closed ports
+PORT      STATE SERVICE
+23/tcp    open  telnet
+9001/tcp  open  tor-orport
+9002/tcp  open  dynamid
+9010/tcp  open  sdr
+9011/tcp  open  unknown
+9090/tcp  open  zeus-admin
+20005/tcp open  btx
+MAC Address: 00:18:9D:86:9C:F5 (Navcast)
+
+Nmap done: 256 IP addresses (1 host up) scanned in 114.51 seconds
+
+
+
+***SCAN 4***
+root@amarisoft-PC2:~# nmap 172.31.3.0/24
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 18:21 PST
+Nmap scan report for 172.31.3.18
+Host is up (0.0018s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+MAC Address: 00:D0:1D:17:47:FB (Furuno Electric CO.)
+
+Nmap done: 256 IP addresses (1 host up) scanned in 20.74 seconds
+
+
+
+***SCAN 5***
+root@amarisoft-PC2:~# nmap -sS -Pn -p10000-12000 172.31.3.18
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 18:26 PST
+Nmap scan report for 172.31.3.18
+Host is up (0.0077s latency).
+Not shown: 1999 closed ports
+PORT      STATE SERVICE
+10010/tcp open  rxapi
+10100/tcp open  unknown
+MAC Address: 00:D0:1D:17:47:FB (Furuno Electric CO.)
+
+Nmap done: 1 IP address (1 host up) scanned in 18.48 seconds
+
+
+
+***SCAN 6***
+root@amarisoft-PC2:~# nmap -sU -Pn --top-ports 2000 172.31.3.18
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 18:30 PST
+Nmap scan report for 172.31.3.18
+Host is up (0.0049s latency).
+All 2000 scanned ports on 172.31.3.18 are open|filtered
+MAC Address: 00:D0:1D:17:47:FB (Furuno Electric CO.)
+
+Nmap done: 1 IP address (1 host up) scanned in 96.08 seconds
+
+
+
+***SCAN 7***
+root@amarisoft-PC2:~# nmap -sU -Pn -p10000-12000 172.31.3.18
+
+Starting Nmap 6.40 ( http://nmap.org ) at 2017-01-09 18:32 PST
+Nmap scan report for 172.31.3.18
+Host is up (0.0100s latency).
+All 2001 scanned ports on 172.31.3.18 are open|filtered
+MAC Address: 00:D0:1D:17:47:FB (Furuno Electric CO.)
+
+Nmap done: 1 IP address (1 host up) scanned in 93.19 seconds
+
